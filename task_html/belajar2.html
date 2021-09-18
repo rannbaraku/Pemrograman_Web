@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Saya menggunakan style pada html, karena ditakutkan belum boleh menggunakan file css terpisah-->
+<!-- namun comment line tidak bisa diterapkan pada sesi style. sehingga akan saya jelaskan pada laporan-->
+    <style>
+
+        body{    
+            width: 100vh;
+            height: 100vh;
+            background-image: linear-gradient(rgba(16, 110, 173, 0.26),
+             rgba(255, 255, 255, 0.753) ), url(asetimg/wallhaven-pk8pzj_1920x1080.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        *{       
+            font-family: 'Ubuntu', sans-serif;     
+            color: rgb(40, 54, 58);
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .h2{
+            font-size: 8px;
+        }
+
+        nav{
+            
+            position:absolute;  
+            background-color: rgba(3, 74, 77, 0.356);
+            height: 50px;
+            width: 100%;
+        } 
+
+        nav ul{
+            float: right;
+            margin-right: 10px;
+      
+        }
+
+        nav h1{
+        font-size: 20px;
+        line-height: 50px;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 0px;
+            line-height: 48px;
+            font-weight: 10;
+            color: white;
+        }
+
+        nav ul li a{
+            
+            padding: 14px 20px;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+    
+        }
+
+        a:hover{
+            background-color: rgba(56, 158, 253, 0.726);
+        }
+        a:active{
+            background-color: rgba(21, 63, 102, 0.541);
+        }
+        nav h1{
+            color : #e7eeff;
+            font-size: 30px;
+            font-weight: 90;
+            line-height: 50px;
+            padding-left: 20px;
+            font-weight: 500;
+        }
+        .content{
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 10%;
+            font-size: 18px;
+        }
+        .content h2{
+            top : 10%;
+            font-size: 42px;
+            color: rgb(40, 54, 58);
+        }
+
+        .garis{
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            bottom: 0px;
+            width: 2px;
+            height: 150%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .related{
+            position: absolute;
+            right: 110px;
+            bottom: 120px;
+
+            text-align: left;
+            padding: 10px;
+            padding-right: 400px;
+            color:rgba(40, 54, 58, 0.829);
+            font-weight: 900;
+
+            border-bottom: 2px solid rgb(255, 255, 255);
+
+
+        }
+        .naik{
+       
+            color: rgb(255, 255, 255);
+            position: fixed;
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+            background-color: rgb(95, 212, 212);
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 50px;
+            z-index: 3;
+        }
+        section{
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            padding: 20px;
+            background-color: white;
+        }  
+        .foto1{
+            
+            position: absolute;
+            top: 120%;
+            right: 470px;
+            padding: 10px;
+            background-color: white ;
+        }
+        .foto2{
+            
+            position: absolute;
+            top: 85%;
+            right: 470px;
+            padding: 10px;
+            background-color: white ;
+        }
+
+        .keterangan1{
+            position: absolute;
+            right: 11%;
+            top: 87%;
+            font-weight: 700;
+        }
+        .keterangan1 ul li{
+            color: rgba(40, 54, 58, 0.829);
+            padding-bottom: 20px;
+        }
+
+        .keterangan2{
+            position: absolute;
+            right: 9%;
+            top: 122%;
+            font-weight: 700;
+        }
+        .keterangan2 ul li{
+            color: rgba(40, 54, 58, 0.829);
+            padding-bottom: 20px;
+        }
+
+        .footer{
+            font-size: 15px;
+            color: white;
+            top: 93%;
+            position:fixed;
+            padding-left: 30px;
+            padding-top: 7px;  
+            background-color: rgb(15, 71, 134);
+            height: 50px;
+            width: 100%;
+            z-index: 2;
+        } 
+
+    </style>
+
+
+
+
+    <head>
+        <meta charset="uft-8">
+        <title>
+            Tugas Minggu ke 3 Randi Baraku
+        </title>
+
+        <!--link icon untuk jump ke bagian atas halaman-->
+        <script src="https://kit.fontawesome.com/72e1ea14e6.js" crossorigin="anonymous"></script>
+        <!--link untuk font yang saya gunakan-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+
+    </head>
+
+
+    <body>
+        <!--Navigasi bar-->
+        <nav>
+            <ul>
+                <li><a href="#">Tombol</a></li>
+                <li><a href="#">Tidak</a></li>
+                <li><a href="#">Dapat</a></li>
+                <li><a href="#">Diakses</a></li>
+            </ul>   
+            <h1>Rann</h1>
+        </nav>
+
+        <!--Tombol icon untuk jump ke bagian atas page-->
+        <a class="naik" href="#"><i class="fas fa-arrow-up"></i></a>
+
+       
+
+
+<!--content utama, berisi penjelasan mengenai judul dan topik yang dibahas-->
+        <div class="content">
+            <h2>The Garden of Words </h2>
+            <h3>  言の葉の庭</h3>
+            <br/>The Garden of words merupakan 
+            <br/>sebuah animasi 2D yang dibesut oleh studio KomikWave.
+            <br/>Movie ini berdurasi 45 menit dan rilis pada tahun 2013
+            <br/>lalu. Movie ini bercerita mengenai seorang pelajar 
+            <br/>yang ditinggal orang tua nya bercerai dan tinggal bersama
+            <br/>ayahnya. Hidup yang sederhan serta membantu ayahnya yang
+            <br/>seorang pengerajin sepatu membuat ia terampil pada
+            <br/>seni memahat kayu tersebut. 
+            <br/>Ditengah kehidupannya ia sering menyempatkan waktu
+            <br/>mengunjungi taman dengan gubuk kecil untuk membuat sepatu
+            <br/>Tidak jarang ia membolos sekolah dengan alasan hujan hanya
+            <br/>untuk membuat sepatu di sana<br/>
+
+            <br/>Seperti karya makoto shinkai lainnya, takdir
+            <br/>menjadi aspek penting dalam pembawaan cerita.
+            <br/>Ketika ia tengah memahat sepatu, dalam penantian meredanya
+            <br/>rintik,a menunggu dengan seorang wanita yang cukupd 
+            <br/>dikenalinaya. Wanita ini adalah gurunya sendiri.  
+            <br/>dari balik dinginnya hujan dan serutan kayu,
+            <br/>kisah romansa terikat umur dari guru dan murid 
+            <br/>ini disajikan dengan begitu rapih dan proporsif.<br/>
+
+            <br/>
+            <br/><i>"Jika hijan tidak kunjung mereda</i>
+            <br/><i>Masih sanggupkah kau menunggu"</i><br/>
+            <br/><i>"Bahkan jika hijan tidak pernah turun</i>
+            <br/><i>Aku akan tetap menunggumu"</i><br><br>
+
+            
+            <br/>Dialog diatas merupakan kutipan yang saya ambil
+            <br/>dari movie ini. movie ini juga mengangkat 
+            <br/>point sastra lama jepang yang dalam dan 
+            <br/>penuh makna.<br> 
+            <br/>Pada akhirnya penulis merekomendasikan
+            <br/>movie ini sebagai pilihan yang tepat
+            <br/>bagi penikmat roman yang anti mainstream,
+            <br/>grafik menawan, serta disajikan dalam durasi
+            <br/>singkat. Semoga bermanfaat.
+            <br/>
+            <br/>Terimakasih.
+            <br/><br><br><br/><br><br>
+        </div> 
+
+        <!--bagian keterangan untuk karya terkait (kimi no nawa)-->
+        <div class="keterangan1">
+            <ul>
+                <li>Judul &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;: 君の名は </li>
+                <li>Alternativ judul &emsp; &nbsp;&nbsp;: Your Name</li>
+                <li>Studio  &emsp;&emsp;&emsp;&emsp; &emsp;&nbsp;&nbsp;&nbsp;&nbsp;:  CoMix Wave Films</li>
+                <li>Tahun Produksi &emsp;&emsp;: 2016</li>
+            </ul>   
+        </div>
+
+        <!--bagian keterangan untuk karya terkait (tenki no ko)-->
+        <div class="keterangan2">
+            <ul>
+                <li>Judul &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;: 天気の子  </li>
+                <li>Alternativ judul &emsp; &nbsp;&nbsp;: Weathering With You  </li>
+                <li>Studio  &emsp;&emsp;&emsp;&emsp; &emsp;&nbsp;&nbsp;&nbsp;&nbsp;:  CoMix Wave Films </li>
+                <li>Tahun Produksi &emsp;&emsp;: 2019</li>
+            </ul>   
+        </div>
+
+        <!--Garis putih di tengah page-->
+        <div class="garis"></div>
+
+        <!--Tulisan "karya terkait" dibawah vidio-->
+        <div class="related">Karya Terkait</div>
+
+        <!--footer page-->
+        <div class="footer">Randi baraku <br/> 119140061</div>
+
+        <!--gambar movie tenki no ko-->
+        <a href="https://myanimelist.net/anime/38826/Tenki_no_Ko"><img class="foto1" src="https://cdn.myanimelist.net/images/anime/1880/101146l.jpg" width="10%" ></a>
+        <!--gambar movie kimi no nawa-->
+        <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa"><img class="foto2" src="https://i.pinimg.com/originals/1d/f6/29/1df62958086be44c47dcc36b5b4c2c39.png" width="10%"></a>
+
+        <!--Sesi untuk embedded vidio dari youtube-->
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dp8wX_OpvkI?controls=0&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        </html>
