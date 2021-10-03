@@ -1,0 +1,80 @@
+/* Untuk mengatur settingan awal */
+*{       
+    font-family: 'Ubuntu', sans-serif;     
+    color: rgb(40, 54, 58);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Untuk mengatur ukuran body */
+body{    
+    width: 100%;
+    height: 100vh;
+}
+
+/* kontener saya buat agar background diperlakukan sebagai objek */
+.kontener{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+/* style untuk kontener setelah setting sebelumnya */
+.kontener:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(16, 110, 173, 0.26),
+    rgba(255, 255, 255, 0.753) ), url(asetimg/wallhaven-pk8pzj_1920x1080.png) no-repeat center;
+    background-size : cover;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+/* Untuk posisis tabel */
+.tebel{
+    padding-top : 5%;
+    position: absolute;
+
+}
+
+/* Untuk mengatur style tabel */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+/* Untuk mengatur baris dan header */
+td, th {
+    border: 2px solid #ffffff;
+    text-align: left;
+    padding: 15px;
+
+}
+
+/* Untuk mengatur warna header */
+th {
+    background-color: white;
+}
+
+/* Untuk mengatur warna baris yang genap */
+tr:nth-child(even) {
+    background-color: #7070704b;
+}
+
+/* Untuk mengatur posisi judul utama */
+.judul{
+    margin-top: 10px;;
+    color:white;
+    font-weight: 900;
+}

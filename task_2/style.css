@@ -1,0 +1,218 @@
+/* Untuk mengatur settingan awal */
+*{       
+    font-family: 'Ubuntu', sans-serif;     
+    color: rgb(40, 54, 58);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Untuk mengatur ukuran body */
+body{    
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* Untuk mengatur background sebagai objek */
+.kontener{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+/* settingan lanjutan dari kontener */
+.kontener:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(16, 110, 173, 0.26),
+    rgba(255, 255, 255, 0.753) ), url(asetimg/wallhaven-pk8pzj_1920x1080.png) no-repeat center;
+    background-size : cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+/* Untuk mengatur teks dengan ukuran h3 */
+h3{
+    font-size: 1rem;
+    color: rgba(74, 78, 80, 0.719);
+    position: relative;
+    float: left ;
+    padding: 0.5rem 0rem;
+
+}
+
+/* Untuk style dari selektor (tanggal-bulan-tahun)*/
+.pilih{
+    width : 32.5%;
+    padding: 0.5rem 1rem;
+    background-color:rgba(177, 204, 223, 0.753);
+    font-size: 0.8rem;
+    border: 2px rgba(0, 0, 0, 0);
+    transition: .3s;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Untuk class pilihan gender laku-laki */
+.laki{
+    position: relative;
+    float: left;
+    padding: 0rem 1rem;
+    padding-left: 0rem;
+    margin-bottom: 1rem;
+}
+
+/* Untuk mengatur radio button jenis kelamin*/
+#jenisK{
+    position: absolute;
+    background-color: rgba(204, 235, 255, 0.753);
+    border-radius: 5px;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom : 7px;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    align-items: center;    
+}
+
+/* Untuk mengatur style boxyang ditengah layar */
+.box{
+    max-width : 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.15) ;
+}
+
+/* Untuk mengatur foto disebelah kiri */
+.kiri{
+    padding: 10px 10px;
+    height: 100%;
+    background: linear-gradient(rgba(16, 110, 173, 0.26),
+    rgba(255, 255, 255, 0.753) ), url(asetimg/wallhaven-pk8pzj_1920x1080.png) no-repeat center;
+    background-size: cover;
+}
+
+/* Untuk mengatur foto di sebelah kanan */
+.kanan{
+    padding: 20px 40px; 
+}
+
+/* Untuk mengatur settingan awal */
+h1{
+    font-size: 4rem;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-top: 10%;
+
+}
+/* Untuk styl pada h1 */
+h1:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    background-color: rgb(195, 236, 255);
+
+}
+
+
+/* Untuk styl pada h2 */
+h2{
+    color: rgba(18, 44, 61, 0.719);
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* Untuk styl pada h2 */
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: rgb(163, 195, 255);
+
+}
+
+/* Untuk styl pada input tipe teks */
+.isian{
+    width : 100%;
+    padding: 0.5rem 1rem;
+    background-color:rgba(204, 235, 255, 0.753);
+    font-size: 1rem;
+    border: 2px rgba(0, 0, 0, 0);
+    margin-bottom: 22px;
+    transition: .3s;
+    border-radius: 5px;
+
+}
+/*mengatur style hover pada input tipe teks */
+.isian:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+/*mengatur style focus pada input tipe teks */
+.isian:focus{
+    background-color:rgba(204, 235, 255, 0.753);
+    border: 2px solid rgba(188, 225, 255, 0.753);
+}
+
+/*mengatur style pada tombol daftar*/
+.tombol{
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(118, 178, 247);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    transition : .3s; 
+}
+
+/*mengatur style hover pada tombol daftar*/
+.tombol:hover{
+    background-color: rgb(67, 93, 104);
+
+}
+
+/*mengatur style active pada input tipe teks */
+.tombol:active{
+    background-color: rgb(255, 255, 255);
+
+}
+
+/*mengatur ukuran layout ketika ukuran diubah */
+@media screen and (max-width:888px) {
+    .box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 100px;
+    }
+}
